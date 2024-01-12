@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- First of all we need a card in which we will make the app -->
+    <div class="card">
+      <!-- Now we will need the search bar -->
+      <div class="search">
+        <!-- Inside the search div we will need a input field and also a search icon -->
+        <input
+          type="text"
+          placeholder="Enter the city name"
+          spellcheck="false"
+        />
+        <button><img src="/images/search.png" alt="search" /></button>
+      </div>
+
+      <div class="weather">
+        <img src="./images/rain.png" class="weather-icon" alt="" />
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+          <div class="cols">
+            <img src="./images/humidity.png" alt="" />
+            <div class="">
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="cols">
+            <img src="./images/wind.png" alt="" />
+            <div class="">
+              <p class="wind">15km/hr</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
